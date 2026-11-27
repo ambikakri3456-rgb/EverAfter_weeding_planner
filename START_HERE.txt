@@ -1,0 +1,12 @@
+EVERAFTER — WEDDING PLANNING WEBSITE
+By Kartik Patel
+
+1. Extract the entire ZIP.
+2. Double-click index.html to open the demo.
+3. For your viva, open the folder in VS Code and use Live Server on index.html.
+4. Open docs/VIVA_GUIDE.html for your demo script and viva questions.
+5. Read README.md for the complete file map and instructions.
+
+No backend, Node.js installation or API keys are needed to use the site.
+Data is saved only in the current browser. Use Settings to export backups.
+Local registration/login and admin controls are frontend demonstrations.
