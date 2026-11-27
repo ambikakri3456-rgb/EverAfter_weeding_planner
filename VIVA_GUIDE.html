@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Everafter — Viva Guide | Kartik Patel</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+{ counter-reset: source-line 0; }
+pre.numberSource code > span
+{ position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+{ content: counter(source-line);
+position: relative; left: -1em; text-align: right; vertical-align: baseline;
+border: none; display: inline-block;
+-webkit-touch-callout: none; -webkit-user-select: none;
+-khtml-user-select: none; -moz-user-select: none;
+-ms-user-select: none; user-select: none;
+padding: 0 4px; width: 4em;
+color: #aaaaaa;
+}
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa; padding-left: 4px; }
+div.sourceCode
+{ }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } 
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.at { color: #7d9029; } 
+code span.bn { color: #40a070; } 
+code span.bu { color: #008000; } 
+code span.cf { color: #007020; font-weight: bold; } 
+code span.ch { color: #4070a0; } 
+code span.cn { color: #880000; } 
+code span.co { color: #60a0b0; font-style: italic; } 
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.do { color: #ba2121; font-style: italic; } 
+code span.dt { color: #902000; } 
+code span.dv { color: #40a070; } 
+code span.er { color: #ff0000; font-weight: bold; } 
+code span.ex { } 
+code span.fl { color: #40a070; } 
+code span.fu { color: #06287e; } 
+code span.im { color: #008000; font-weight: bold; } 
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } 
+code span.kw { color: #007020; font-weight: bold; } 
+code span.op { color: #666666; } 
+code span.ot { color: #007020; } 
+code span.pp { color: #bc7a00; } 
+code span.sc { color: #4070a0; } 
+code span.ss { color: #bb6688; } 
+code span.st { color: #4070a0; } 
+code span.va { color: #19177c; } 
+code span.vs { color: #4070a0; } 
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } 
+</style>
+  <style type="text/css">body{font:16px/1.75 Arial,sans-serif;color:#283e32;background:#fff;max-width:920px;margin:0 auto;padding:60px 35px}h1,h2,h3{font-family:Georgia,serif;line-height:1.3}h1{font-size:38px;color:#284e3b;border-bottom:3px solid #adc09c;padding-bottom:22px}h2{font-size:27px;margin-top:44px;color:#31593f}h3{font-size:20px;margin-top:27px}p,li{color:#4d5f52}table{border-collapse:collapse;width:100%;font-size:14px;margin:22px 0}th{text-align:left;background:#edf2e7;color:#2a4a34}th,td{border:1px solid #dfe7d7;padding:11px 13px;vertical-align:top}a{color:#315f41}code{font-size:14px;background:#f0f3eb;border-radius:4px;padding:2px 5px}pre{background:#f0f3eb;border:1px solid #dce5d3;padding:20px;border-radius:8px;overflow-x:auto}pre code{padding:0}blockquote{border-left:4px solid #a1b38e;padding-left:20px;margin-left:0}#TOC{background:#f6f8f2;border-radius:10px;padding:20px 30px;font-size:14px}#TOC ul{padding-left:20px}.header-section-number{color:#8ca078}@media(max-width:600px){body{padding:25px 20px}h1{font-size:30px}table{font-size:12px}th,td{padding:8px}}@media print{body{font-size:11px;max-width:none;padding:0}h1{font-size:26px}h2{font-size:20px;break-after:avoid}h3{font-size:15px;break-after:avoid}pre,table,blockquote{break-inside:avoid}#TOC{display:none}table{font-size:10px}code{font-size:10px}@page{margin:17mm;size:A4}}
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Everafter — Viva Guide | Kartik Patel</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#everafter-viva-guide" id="toc-everafter-viva-guide">Everafter — Viva Guide</a>
+<ul>
+<li><a href="#your-opening-explanation" id="toc-your-opening-explanation">1. Your opening explanation</a></li>
+<li><a href="#a-five-minute-demonstration" id="toc-a-five-minute-demonstration">2. A five-minute
+demonstration</a></li>
+<li><a href="#explain-the-files-simply" id="toc-explain-the-files-simply">3. Explain the files simply</a></li>
+<li><a href="#follow-one-record-through-the-code" id="toc-follow-one-record-through-the-code">4. Follow one record through
+the code</a></li>
+<li><a href="#the-data-model" id="toc-the-data-model">5. The data
+model</a></li>
+<li><a href="#calculations-you-should-know" id="toc-calculations-you-should-know">6. Calculations you should
+know</a></li>
+<li><a href="#common-viva-questions-and-short-answers" id="toc-common-viva-questions-and-short-answers">7. Common viva
+questions and short answers</a></li>
+<li><a href="#code-you-should-be-ready-to-explain" id="toc-code-you-should-be-ready-to-explain">8. Code you should be ready
+to explain</a></li>
+<li><a href="#before-presenting" id="toc-before-presenting">9. Before
+presenting</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="everafter-viva-guide">Everafter — Viva Guide</h1>
+<p><strong>Kartik Patel · Wedding Planning Website · HTML, CSS &amp;
+JavaScript</strong></p>
+<h2 id="your-opening-explanation">1. Your opening explanation</h2>
+<p>“My project is Everafter, a frontend wedding planning website. It
+solves the problem of wedding information being scattered across
+messages, notebooks and spreadsheets. It brings tasks, guests, budget,
+vendors and events into one responsive dashboard. I used HTML for
+structure, CSS for design and JavaScript for interaction and validation.
+Data is saved using localStorage, so this version does not need an
+application backend.”</p>
+<p>Say this in your own words. Know the code you show; do not claim that
+this frontend provides real online authentication, vendor bookings or
+payments.</p>
+<h2 id="a-five-minute-demonstration">2. A five-minute demonstration</h2>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Time</th>
+<th>Show</th>
+<th>Explain</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0:00–0:35</td>
+<td>Overview</td>
+<td>The problem, project name, four live summary cards and wedding
+countdown.</td>
+</tr>
+<tr class="even">
+<td>0:35–1:10</td>
+<td>Settings</td>
+<td>Edit the couple names, date or budget. Save and show the updated
+overview.</td>
+</tr>
+<tr class="odd">
+<td>1:10–2:00</td>
+<td>Guest list</td>
+<td>Add a guest with a party of two, confirm the RSVP, search for it,
+edit it and explain deletion confirmation.</td>
+</tr>
+<tr class="even">
+<td>2:00–2:40</td>
+<td>Checklist</td>
+<td>Complete a task and show the progress change. Filter by Done.</td>
+</tr>
+<tr class="odd">
+<td>2:40–3:20</td>
+<td>Budget</td>
+<td>Add an expense; deliberately enter paid greater than cost to
+demonstrate validation, then correct it.</td>
+</tr>
+<tr class="even">
+<td>3:20–3:50</td>
+<td>Vendors and timeline</td>
+<td>Shortlist a vendor, explain booked status and show the order of
+wedding events.</td>
+</tr>
+<tr class="odd">
+<td>3:50–4:25</td>
+<td>Reports</td>
+<td>Explain derived statistics, CSV export and Print / Save PDF.</td>
+</tr>
+<tr class="even">
+<td>4:25–5:00</td>
+<td>Refresh, backup, code</td>
+<td>Refresh to show persistence; explain localStorage, demonstrate the
+JSON backup, then show the source file map.</td>
+</tr>
+</tbody>
+</table>
+<p>Before your viva, open the project once, check the browser and keep a
+backup. Use invented demo contacts. The demo opens without a password.
+Prepare a separate local account beforehand if you want to demonstrate
+registration and login.</p>
+<h2 id="explain-the-files-simply">3. Explain the files simply</h2>
+<ul>
+<li><strong>index.html:</strong> The document skeleton. It has metadata,
+CSS links, script tags, the app container, the native dialog and an
+accessible toast region.</li>
+<li><strong>styles.css:</strong> Visual design, Flexbox/Grid layouts,
+responsive breakpoints, animations, focus states, reduced-motion support
+and print styling.</li>
+<li><strong>icons.js:</strong> SVG icons stored as markup so no icon
+library is needed.</li>
+<li><strong>data.js:</strong> Fictional sample objects, allowed
+categories and sidebar routes.</li>
+<li><strong>model.js:</strong> Business rules. It validates records,
+computes totals, derives payment status and validates imported
+backups.</li>
+<li><strong>store.js:</strong> Data persistence and CRUD. It also stores
+demonstration accounts and one plan for each account.</li>
+<li><strong>app.js:</strong> The UI controller. It creates each screen,
+handles forms and clicks, changes routes, opens dialogs, searches
+records and prepares downloads.</li>
+</ul>
+<p>The scripts use <code>defer</code>, so the HTML is parsed before they
+execute. They execute in document order: icons → data → model → store →
+app. There is no bundler or import system required.</p>
+<h2 id="follow-one-record-through-the-code">4. Follow one record through
+the code</h2>
+<p>Use “Add guest” as your example:</p>
+<ol type="1">
+<li>The button contains <code>data-action=&quot;add&quot;</code> and
+<code>data-type=&quot;guests&quot;</code>.</li>
+<li>The shared click listener in <code>app.js</code> sees that action
+and calls <code>openRecord()</code>.</li>
+<li>The dialog shows labelled inputs with HTML validation
+attributes.</li>
+<li>Submitting the form uses <code>preventDefault()</code> so the page
+does not reload.</li>
+<li><code>FormData</code> collects the fields into an object.</li>
+<li><code>Planner.record(&#39;guests&#39;, values)</code> validates and
+normalises the record.</li>
+<li><code>Store.put()</code> adds a unique ID and appends or updates the
+array.</li>
+<li><code>Store.save()</code> calls <code>JSON.stringify()</code> and
+writes to localStorage.</li>
+<li>The UI re-renders the current screen and recalculates totals.</li>
+<li>A toast confirms that the record was saved.</li>
+</ol>
+<p>For an edit, the record already has an ID. <code>findIndex()</code>
+locates that ID and replaces the object instead of adding a duplicate.
+Deletion finds the specific ID and removes that item after
+confirmation.</p>
+<h2 id="the-data-model">5. The data model</h2>
+<p>Each local account owns a plan containing:</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Property</th>
+<th>Data stored</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>wedding</code></td>
+<td>Partners, wedding date, venue, city, budget, guest target, theme,
+note</td>
+</tr>
+<tr class="even">
+<td><code>tasks</code></td>
+<td>Title, category, due date, priority, status, notes</td>
+</tr>
+<tr class="odd">
+<td><code>guests</code></td>
+<td>Name, email, phone, family side, party size, RSVP, meal, table</td>
+</tr>
+<tr class="even">
+<td><code>expenses</code></td>
+<td>Title, category, estimated cost, paid amount, due date, notes</td>
+</tr>
+<tr class="odd">
+<td><code>vendors</code></td>
+<td>Name, service, city, quote, planning status, email, photo,
+notes</td>
+</tr>
+<tr class="even">
+<td><code>events</code></td>
+<td>Title, date, start/end time, location, category, status,
+coordinator</td>
+</tr>
+<tr class="odd">
+<td><code>ideas</code></td>
+<td>Title, category, photo, notes, saved flag</td>
+</tr>
+<tr class="even">
+<td><code>activity</code></td>
+<td>A bounded history of changes to that wedding plan</td>
+</tr>
+<tr class="odd">
+<td><code>journey</code></td>
+<td>The selected planning stage</td>
+</tr>
+</tbody>
+</table>
+<p>The persisted object has <code>version</code>, <code>active</code>,
+<code>users</code> and <code>plans</code>. The localStorage key is
+<code>everafter.project.v1</code>. Account plans are indexed by their
+account IDs. This is structured JSON in the browser, not a relational
+database.</p>
+<h2 id="calculations-you-should-know">6. Calculations you should
+know</h2>
+<ul>
+<li><strong>Guests listed:</strong> add the <code>party</code> value
+from every guest row.</li>
+<li><strong>Confirmed guests:</strong> filter rows with RSVP
+<code>Confirmed</code>, then sum party sizes.</li>
+<li><strong>Planned cost:</strong> sum <code>amount</code> across
+expenses.</li>
+<li><strong>Paid:</strong> sum <code>paid</code> across expenses.</li>
+<li><strong>Outstanding:</strong> planned cost minus paid amount.</li>
+<li><strong>Unallocated budget:</strong> wedding budget minus planned
+cost. A negative result is over budget.</li>
+<li><strong>Task progress:</strong> completed tasks divided by all
+tasks, multiplied by 100. Return 0 if there are no tasks to avoid
+division by zero.</li>
+<li><strong>Booked vendors:</strong> count vendor records with status
+<code>Booked</code>.</li>
+<li><strong>Payment status:</strong> paid amount 0 → Unpaid; paid less
+than cost → Part paid; paid equal to cost → Paid.</li>
+</ul>
+<p>Example: an expense costs ₹10,000 and ₹3,000 has been paid. Its
+outstanding amount is ₹7,000, and its status is Part paid. A party of
+three marked Confirmed adds three people to the confirmed total.</p>
+<h2 id="common-viva-questions-and-short-answers">7. Common viva
+questions and short answers</h2>
+<h3 id="q1.-what-is-the-objective-of-this-project">Q1. What is the
+objective of this project?</h3>
+<p>To give users one convenient place to manage wedding details, reduce
+scattered information and track planning progress through a clear
+workflow.</p>
+<h3 id="q2.-why-did-you-use-html-css-and-javascript-separately">Q2. Why
+did you use HTML, CSS and JavaScript separately?</h3>
+<p>Separation of concerns: HTML defines structure, CSS defines
+presentation, and JavaScript defines behaviour. Separate files are
+easier to understand and maintain.</p>
+<h3 id="q3.-what-is-semantic-html">Q3. What is semantic HTML?</h3>
+<p>Using elements according to their meaning, such as
+<code>header</code>, <code>nav</code>, <code>main</code>,
+<code>section</code>, <code>article</code>, <code>form</code>,
+<code>label</code> and <code>table</code>. It improves structure and
+helps assistive technologies.</p>
+<h3 id="q4.-is-this-a-single-page-application">Q4. Is this a single-page
+application?</h3>
+<p>Yes. JavaScript changes the content in the main container. Hash URLs
+such as <code>#guests</code> select screens without a full page request.
+It is a small SPA written without a framework.</p>
+<h3 id="q5.-what-is-the-dom">Q5. What is the DOM?</h3>
+<p>The Document Object Model is the browser’s tree representation of the
+page. JavaScript queries elements, reads form values and updates what
+the user sees.</p>
+<h3 id="q6.-what-is-crud">Q6. What is CRUD?</h3>
+<p>Create, Read, Update and Delete. Adding a guest is Create, listing
+guests is Read, changing their RSVP is Update and removing a guest is
+Delete.</p>
+<h3 id="q7.-how-do-you-know-which-record-to-edit">Q7. How do you know
+which record to edit?</h3>
+<p>Every record has a unique ID. The edit control carries the ID in a
+<code>data-id</code> attribute, and the store finds the matching
+object.</p>
+<h3 id="q8.-what-is-localstorage">Q8. What is localStorage?</h3>
+<p>A browser API that stores string key/value pairs for a site. It
+normally persists across refreshes and browser restarts until the data
+is cleared. Storage policies, private browsing and quotas can affect
+it.</p>
+<h3 id="q9.-why-use-json.stringify-and-json.parse">Q9. Why use
+JSON.stringify and JSON.parse?</h3>
+<p>localStorage stores strings. <code>JSON.stringify()</code> converts
+the JavaScript object into a string; <code>JSON.parse()</code> converts
+that string back into structured data.</p>
+<h3 id="q10.-what-is-the-difference-between-localstorage-and-sessionstorage">Q10.
+What is the difference between localStorage and sessionStorage?</h3>
+<p>localStorage usually persists between browsing sessions.
+sessionStorage is tied to the current tab session. This project uses
+localStorage so wedding plans survive refreshes and restarts.</p>
+<h3 id="q11.-does-it-have-a-backend">Q11. Does it have a backend?</h3>
+<p>No. It has no application server, server database or API. An optional
+static server simply serves the HTML, CSS, JS and image files to the
+browser.</p>
+<h3 id="q12.-is-login-secure-in-this-project">Q12. Is login secure in
+this project?</h3>
+<p>It is only a local demonstration. Passwords are salted and hashed
+with SHA-256, but all data and role checks remain in the browser and can
+be modified. Production login needs server-enforced authentication and
+authorisation, secure sessions and stronger password storage
+practices.</p>
+<h3 id="q13.-what-is-the-difference-between-authentication-and-authorisation">Q13.
+What is the difference between authentication and authorisation?</h3>
+<p>Authentication checks who the user is. Authorisation checks what that
+user may do. The project demonstrates both flows locally, but it cannot
+securely enforce either without a backend.</p>
+<h3 id="q14.-what-can-the-demo-administrator-do">Q14. What can the demo
+administrator do?</h3>
+<p>View local accounts, enable or disable accounts, change demonstration
+roles and delete accounts. The default demo account and the currently
+active admin are protected from these controls. Activity shown belongs
+to the current wedding plan.</p>
+<h3 id="q15.-how-is-form-validation-implemented">Q15. How is form
+validation implemented?</h3>
+<p>HTML checks required fields, email input, number limits and date
+input. JavaScript adds business rules such as paid amount not exceeding
+cost, valid statuses and event end time after start time.</p>
+<h3 id="q16.-why-is-javascript-validation-still-needed">Q16. Why is
+JavaScript validation still needed?</h3>
+<p>HTML checks basic input format. It cannot express every rule
+involving several fields. The same JavaScript validators also check
+imported JSON backups.</p>
+<h3 id="q17.-what-does-preventdefault-do-here">Q17. What does
+preventDefault do here?</h3>
+<p>It stops the form’s normal navigation/reload, allowing JavaScript to
+validate, save and update the current screen.</p>
+<h3 id="q18.-what-is-event-delegation">Q18. What is event
+delegation?</h3>
+<p>A parent element handles events from its children. The app listens at
+document level and uses <code>closest(&#39;[data-action]&#39;)</code> to
+identify the action. Newly rendered buttons work without attaching a
+separate listener to every button.</p>
+<h3 id="q19.-how-does-search-work">Q19. How does search work?</h3>
+<p>The app normalises the search term to lowercase and uses array
+filtering to compare it with record values. Section filters combine text
+search with status/category/family selection. Header search searches all
+six record types.</p>
+<h3 id="q20.-which-array-methods-do-you-use">Q20. Which array methods do
+you use?</h3>
+<p><code>filter()</code> selects records, <code>map()</code> creates
+output, <code>reduce()</code> calculates totals, <code>find()</code>
+locates a record, <code>findIndex()</code> locates an update position
+and <code>sort()</code> orders tasks/events by date.</p>
+<h3 id="q21.-how-is-the-website-responsive">Q21. How is the website
+responsive?</h3>
+<p>CSS Grid and Flexbox create adaptable layouts. Media queries change
+columns and spacing. The desktop sidebar becomes a mobile drawer, and
+wide tables scroll horizontally inside their own containers.</p>
+<h3 id="q22.-what-is-a-css-custom-property">Q22. What is a CSS custom
+property?</h3>
+<p>A reusable CSS value such as <code>--green</code>. Using
+<code>var(--green)</code> across components makes the colour theme easy
+to change consistently.</p>
+<h3 id="q23.-how-do-you-create-the-charts-without-a-chart-library">Q23.
+How do you create the charts without a chart library?</h3>
+<p>The budget donut uses a CSS conic gradient based on category
+proportions. Progress bars use calculated widths. The data is also shown
+in text so users do not depend on colour alone.</p>
+<h3 id="q24.-how-do-exports-work">Q24. How do exports work?</h3>
+<p>JavaScript turns records into CSV or JSON text, creates a Blob and a
+temporary object URL, then triggers a download with an anchor. The
+temporary URL is revoked afterward.</p>
+<h3 id="q25.-how-do-you-prevent-invalid-backup-imports">Q25. How do you
+prevent invalid backup imports?</h3>
+<p>The importer checks file size, format/version, required arrays,
+record limits, IDs, dates, allowed categories, image names and business
+rules. It builds a fresh allowed object, then asks for confirmation
+before replacing the current plan.</p>
+<h3 id="q26.-how-do-you-handle-user-entered-html">Q26. How do you handle
+user-entered HTML?</h3>
+<p>Dynamic text is escaped before being inserted into HTML templates.
+Characters such as <code>&lt;</code>, <code>&gt;</code>,
+<code>&amp;</code> and quotes are converted into entities. Input is
+treated as text, not executable markup.</p>
+<h3 id="q27.-why-protect-csv-output-from-formulas">Q27. Why protect CSV
+output from formulas?</h3>
+<p>Some spreadsheet programs interpret values beginning with characters
+such as <code>=</code> as formulas. The CSV exporter prefixes these
+values so user-entered text remains text. It also quotes fields and
+doubles embedded quotes.</p>
+<h3 id="q28.-what-accessibility-features-did-you-add">Q28. What
+accessibility features did you add?</h3>
+<p>Associated labels, semantic controls, visible focus outlines,
+alternative text, a skip link, native dialogs, accessible button names,
+a live toast region and reduced-motion CSS. The closed mobile drawer is
+removed from keyboard interaction.</p>
+<h3 id="q29.-does-marking-a-vendor-booked-make-a-real-booking">Q29. Does
+marking a vendor Booked make a real booking?</h3>
+<p>No. It changes a planning record only. There is no vendor service
+integration. Quotes enter the budget only through an explicit added
+expense.</p>
+<h3 id="q30.-what-are-the-main-limitations-and-future-improvements">Q30.
+What are the main limitations and future improvements?</h3>
+<p>The current version has local data only. Future work could add a
+backend, secure accounts and roles, a database, shared collaboration,
+real invitation delivery, verified vendors, live availability and
+controlled payment integration. Those are future features, not present
+capabilities.</p>
+<h3 id="q31.-what-happens-if-localstorage-is-unavailable-or-full">Q31.
+What happens if localStorage is unavailable or full?</h3>
+<p>The app catches the storage error, keeps the current changes in
+memory and shows a warning. The user can export a backup before closing
+the page.</p>
+<h3 id="q32.-why-use-a-native-dialog">Q32. Why use a native dialog?</h3>
+<p>The HTML <code>dialog</code> element provides modal behaviour and
+browser-managed focus containment. It supports Escape to close and
+provides a structured place for accessible form content.</p>
+<h3 id="q33.-how-do-you-test-this-project">Q33. How do you test this
+project?</h3>
+<p>I check real interface workflows in the browser and use separate
+model tests for calculations, validation, persistence, account
+isolation, admin guards and backup handling. Automated tests use
+temporary in-memory data rather than the user’s records.</p>
+<h3 id="q34.-why-store-estimated-cost-and-paid-amount-separately">Q34.
+Why store estimated cost and paid amount separately?</h3>
+<p>A booked service may require only a deposit initially. Keeping both
+values makes the remaining payment visible and prevents falsely treating
+every planned expense as fully paid.</p>
+<h3 id="q35.-why-are-vendor-quotes-separate-from-budget-expenses">Q35.
+Why are vendor quotes separate from budget expenses?</h3>
+<p>Users can compare several vendors without counting all those quotes
+as commitments. They deliberately add the chosen quote to the budget
+when ready.</p>
+<h2 id="code-you-should-be-ready-to-explain">8. Code you should be ready
+to explain</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> confirmedPeople <span class="op">=</span> guests</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">filter</span>(guest <span class="kw">=&gt;</span> guest<span class="op">.</span><span class="at">rsvp</span> <span class="op">===</span> <span class="st">&#39;Confirmed&#39;</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="op">.</span><span class="fu">reduce</span>((total<span class="op">,</span> guest) <span class="kw">=&gt;</span> total <span class="op">+</span> guest<span class="op">.</span><span class="at">party</span><span class="op">,</span> <span class="dv">0</span>)<span class="op">;</span></span></code></pre></div>
+<p><code>filter</code> keeps confirmed guest parties.
+<code>reduce</code> adds each party size to a running total starting
+from zero.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>localStorage<span class="op">.</span><span class="fu">setItem</span>(<span class="st">&#39;everafter.project.v1&#39;</span><span class="op">,</span> <span class="bu">JSON</span><span class="op">.</span><span class="fu">stringify</span>(data))<span class="op">;</span></span></code></pre></div>
+<p>This stores a JSON string under a stable key. On load, the app reads
+the key and parses the JSON inside a try/catch block.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (paid <span class="op">&gt;</span> amount) {</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">throw</span> <span class="kw">new</span> <span class="bu">Error</span>(<span class="st">&#39;Amount paid cannot exceed the total cost.&#39;</span>)<span class="op">;</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<p>This is a business validation rule involving two fields. The form
+handler catches the error and shows it inside the dialog.</p>
+<h2 id="before-presenting">9. Before presenting</h2>
+<ul>
+<li>Extract and run the project before the viva; keep all asset folders
+together.</li>
+<li>Use the demo wedding so the dashboard has realistic records.</li>
+<li>Know the distinction between frontend storage and a server
+database.</li>
+<li>Practise adding, editing and deleting a guest and an expense.</li>
+<li>Practise explaining how a changed record updates the reports.</li>
+<li>Keep a JSON backup before resetting your plan.</li>
+<li>Use the actual code and your own explanation; avoid memorising
+claims you cannot demonstrate.</li>
+</ul>
+</body>
+</html>
